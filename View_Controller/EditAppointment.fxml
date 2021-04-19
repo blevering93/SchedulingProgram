@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.EditAppointmentController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="5.0" layoutY="5.0" prefHeight="800.0" prefWidth="800.0">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="800.0">
+                     <children>
+                        <Label alignment="CENTER" layoutY="14.0" prefHeight="50.0" prefWidth="800.0" text="Edit Appointment">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="100.0" prefHeight="600.0" prefWidth="800.0">
+                     <children>
+                        <GridPane layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.20001220703125" minWidth="10.0" prefWidth="232.0000244140625" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="635.1999359130859" minWidth="10.0" prefWidth="568.7999755859375" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="Customer:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="Appt. Title:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="Description:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="Appt. Type:" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="Appt. Date:" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="Appt. Time:" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="apptTitleTextbox" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="descriptionTextbox" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="apptTypeTextbox" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <children>
+                                    <Pane prefHeight="57.0" prefWidth="30.0" />
+                                 </children>
+                              </HBox>
+                              <DatePicker fx:id="dateSelectDate" editable="false" prefHeight="46.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <ComboBox fx:id="apptTimeCombobox" prefHeight="44.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField fx:id="idTextbox" disable="true" editable="false" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <Label prefHeight="20.0" prefWidth="200.0" text="ID:">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="customerTextbox" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="700.0" prefHeight="100.0" prefWidth="800.0">
+                     <children>
+                        <Button fx:id="closeBtn" layoutX="637.0" layoutY="24.0" mnemonicParsing="false" prefWidth="150.0" text="Close">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="updateBtn" layoutX="474.0" layoutY="24.0" mnemonicParsing="false" onAction="#updateClick" prefWidth="150.0" text="Update">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

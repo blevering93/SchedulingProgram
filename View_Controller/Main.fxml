@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="monthViewBtn" mnemonicParsing="false" onAction="#monthViewClicked" prefHeight="134.0" prefWidth="200.0" text="View Appointments By Month" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="weekViewBtn" mnemonicParsing="false" onAction="#weekViewClicked" prefHeight="134.0" prefWidth="204.0" text="View Appointments By Week" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addAppointmentBtn" mnemonicParsing="false" onAction="#addAppointmentClick" prefHeight="133.0" prefWidth="204.0" text="Add New Appointment" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="customerViewBtn" mnemonicParsing="false" onAction="#customerViewClick" prefHeight="133.0" prefWidth="204.0" text="View All Customers" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addCustomerBtn" mnemonicParsing="false" onAction="#addCustomerClick" prefHeight="133.0" prefWidth="204.0" text="Add New Customer" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#logoutClick" prefHeight="133.0" prefWidth="204.0" text="Logout" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="mainView" layoutX="200.0" prefHeight="800.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>
